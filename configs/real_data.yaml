@@ -1,0 +1,8 @@
+# Real-F16 dataset (Roboflow Universe, CC BY 4.0)
+# https://universe.roboflow.com/arsivs-workspace/f16-kob5w-cazuz
+path: /kaggle/working/f16-1
+train: train/images
+val: valid/images
+test: test/images
+nc: 1
+names: ['F16']

@@ -1,0 +1,7 @@
+# Scale-model F16 dataset (self-captured, video-level split)
+path: /kaggle/input/datasets/ouzhanceviz/final-dataset/final_dataset
+train: images/train
+val: images/val
+test: images/test
+nc: 1
+names: ['F16']
