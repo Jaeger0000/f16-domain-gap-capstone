@@ -85,9 +85,12 @@ The test set is drawn from **videos entirely excluded** from training and valida
 
 1. **Frame extraction** — videos were converted to frames using the
    [`video_to_png_convertor`](https://github.com/Jaeger0000/video_to_png_convertor) tool.
-2. **Annotation** — a helper YOLO model (`03_helper_autolabel.ipynb`) pre-labeled frames in
-   [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling); every frame was then manually
-   verified and corrected. Single class `F16`; negative (background) frames included.
+2. **Annotation** — all frames were annotated and verified manually in
+   [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling) on a local machine. A helper YOLO
+   model (`03_helper_autolabel.ipynb`) was used only to pre-suggest boxes; **every single label
+   was manually reviewed and corrected by the author**, so the final annotations (including the
+   test set used for evaluation) are human-verified ground truth. Single class `F16`; negative
+   (background) frames included.
 3. **Video-level split** — frames from any single video appear in only one split.
 
 ---
